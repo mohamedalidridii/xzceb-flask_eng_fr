@@ -1,6 +1,6 @@
 from machinetranslation import translator
 from flask import Flask, render_template, request
-from machinetranslation import test, translator
+from machinetranslation import tests, translator
 
 app = Flask("Web Translator")
 
@@ -21,4 +21,4 @@ def renderIndexPage():
     return render_template("index.html")
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=3000)
+    app.run(host="0.0.0.0", port=8080)
